@@ -37,7 +37,7 @@ footer {
     justify-items: center;
     background-color: rgb(136, 196, 124);
 }
-.schoollink, .lessons {
+.schoollink, a {
     text-decoration: none;
 }
 footer .copy {

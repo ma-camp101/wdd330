@@ -4,8 +4,8 @@ fetch(portfolio)
 .then((response) => response.json())
 
 .then(function (jsonObject) {
-  let weeks = jsonObject['weeks'];
-  weeks.forEach((week) => {
+  let items = jsonObject['weeks'];
+  items.forEach((week) => {
 
     let weeks = document.createElement('ol');
     let label = document.createElement('li');
