@@ -5,3 +5,9 @@ body {
     text-align: center;
     background-color: antiquewhite;
 }
+p {
+    line-height: 1.5rem;
+    margin: 20px auto;
+    text-align: left;
+    width: 300px;
+}
