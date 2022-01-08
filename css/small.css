@@ -1,0 +1,48 @@
+body {
+    font-family: "Lato", "Open Sans", sans-serif;
+    width: auto;
+}
+header {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(136, 196, 124);
+}
+header h1 {
+    font-size: 1.5rem;
+}
+header img {
+    padding-top: 10px;
+}
+main {
+    min-height: 350px;
+}
+h2 {
+    font-size: 1.25em;
+    padding-left: 30px;
+}
+.weeks {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+.weeks ol {
+    list-style: none;
+    font-size: 18px;
+}
+footer {
+    height:auto;
+    display:grid;
+    grid-template-rows: 15px 15px;
+    justify-items: center;
+    background-color: rgb(136, 196, 124);
+}
+.schoollink, .lessons {
+    text-decoration: none;
+}
+footer .copy {
+    font-size: 14px;
+}
+footer .modified {
+    font-size: 12px;
+}
