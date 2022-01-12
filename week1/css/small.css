@@ -11,3 +11,14 @@ p {
     text-align: left;
     width: 300px;
 }
+a {
+    text-decoration: none;
+    font-size: 1.25;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: double thick #feaace;
+    background-color: aliceblue;
+}
+footer {
+    padding: 40px;
+}
