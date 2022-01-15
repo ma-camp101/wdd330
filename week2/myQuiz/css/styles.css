@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+h1 {
+    text-align: center;
+}
+fieldset {
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+legend {
+    padding: 3px;
+    background-color: aliceblue;
+    border: solid thin #000;
+}
+input {
+    padding: 2px;
+    margin: 10px;
+}
+button {
+    margin-left: 10px;
+}
