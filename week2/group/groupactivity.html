@@ -4,33 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='WDD330 Group Activity'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Week 2 Group Activity</title>
 </head>
 <body>
     <h1>Week 2 Team Activity</h1>
-
-    <input type="text" id="textInput" name="text">
-        <button onclick="displayText()">Send It!</button>
-    </input><br>
-
-    <div id="displayResult"></div><br>
-
-    <input type="number" id="numberInput" name="number">
-        <button onclick="sumNumber()">Add It Up!</button>
-    </input><br>
-
-    <div id="showSum"></div><br>
-
-    <input type="number" id="number1Input" name="number"></input>
-    <input type="number" id="number2Input" name="number">
-    <button onclick="myNumbers('add')">Add ➕</button>
-    <button onclick="myNumbers('subtract')">Subtract ➖</button>
-    <button onclick="myNumbers('multiply')">Multiply ✖️</button>
-    <button onclick="myNumbers('divide')">Divide ➗</button>
-    </input><br>
-<br>
-
-    <div id="sumAll"></div>
+    <div class="tests">
+        <h2>Text Input</Input></h2>
+        <input type="text" id="textInput" name="text"><br><br>
+            <button onclick="displayText()">Send It!</button>
+        </input><br>
+        <div id="displayResult"></div><br>
+        <h2>Number Add Up</h2>
+        <input type="number" id="numberInput" name="number" maxlength="15" size="15"><br><br>
+            <button onclick="sumNumber()">Add It Up!</button>
+        </input><br>
+        <div id="showSum"></div><br>
+        <h2>Math Exercise</h2>
+        <input type="number" id="number1Input" name="number" maxlength="15" size="15"></input><br><br>
+        <input type="number" id="number2Input" name="number" maxlength="15" size="15"><br><br>
+        <button onclick="myNumbers('add')">Add <img src="images/rsz_1rsz_favpng_mathematical-notation-mathematics-multiplication-sign-symbol.png" alt="addition symbol"></button>
+        <button onclick="myNumbers('subtract')">Subtract <img src="images/rsz_1favpng_mathematical-notation-mathematics-multiplication-sign-symbol.png" alt="subtraction symbol"></button>
+        <button onclick="myNumbers('multiply')">Multiply <img src="images/rsz_3favpng_mathematical-notation-mathematics-multiplication-sign-symbol.png" alt="multiply symbol"></button>
+        <button onclick="myNumbers('divide')">Divide <img src="images/rsz_2favpng_mathematical-notation-mathematics-multiplication-sign-symbol.png" alt="divide symbol"></button>
+        </input><br><br>
+        <div id="sumAll"></div>
+    </div>
+    <hr>
+    <footer>
+        Math Icons from <a href="https://favpng.com">favpng.com</a>  
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
