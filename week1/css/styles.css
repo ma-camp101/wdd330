@@ -3,13 +3,16 @@ body {
     font-weight: 400;
     margin: 10px auto;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: rgb(252, 247, 221);
 }
 p {
     line-height: 1.5rem;
     margin: 20px auto;
     text-align: left;
     width: 300px;
+    background-color: white;
+    border: solid thin black;
+    padding: 10px;
 }
 a {
     text-decoration: none;
