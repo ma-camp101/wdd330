@@ -1,0 +1,36 @@
+body {
+    background-color: cornsilk;
+    font-family: "Lato", "Open Sans", sans-serif;
+    font-weight: 400;
+}
+header {
+    padding: 10px;
+}
+h1, button {
+    font-family: "Permanent Marker", fantasy;
+    text-align: center;
+}
+main {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    border: solid thin blue;
+}
+button {
+    padding: 10px 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    text-align: center;
+}
+.schoollink {
+    text-decoration: none;
+}
