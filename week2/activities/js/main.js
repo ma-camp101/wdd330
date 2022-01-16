@@ -1,8 +1,9 @@
 function fizzBuzz() {
-    for (let n = 1; n <= 100; n++) {
+    for (let i = 1; i <= 100; i++) {
         let output = "";
-        if (n % 3 == 0) output += "Fizz";
-        if (n % 5 == 0) output += "Buzz";
+        if (i % 3 == 0) output += "Fizz";
+        if (i % 5 == 0) output += "Buzz";
+        x = (output || i);
     }    
-    document.getElementById("fizzy").innerHTML = (output || n);
+    document.getElementsByClassName("fizzy").innerHTML = x;
 }
