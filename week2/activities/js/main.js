@@ -4,6 +4,7 @@ function fizzBuzz() {
         if (i % 3 == 0) output += "Fizz";
         if (i % 5 == 0) output += "Buzz";
         x = (output || i);
+        console.log(output || i);
     }    
-    document.getElementsByClassName("fizzy").innerHTML = x;
+    document.getElementById("fizzy").innerHTML = x;
 }
