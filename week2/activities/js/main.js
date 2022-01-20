@@ -1,10 +1,12 @@
 function fizzBuzz() {
+    let output = "";
     for (let i = 1; i <= 100; i++) {
-        let output = "";
-        if (i % 3 == 0) output += "Fizz";
-        if (i % 5 == 0) output += "Buzz";
-        x = (output || i);
-        console.log(output || i);
+
+        if ((i % 3 == 0) && (i % 5 == 0)) output += "FizzBuzz";
+        else if (i % 3 == 0) output += "Fizz";
+        else if (i % 5 == 0) output += "Buzz";
+        else output += i;
+        output += "<br>";
     }    
-    document.getElementById("fizzy").innerHTML = x;
+    document.getElementById("fizzy").innerHTML = output;
 }
