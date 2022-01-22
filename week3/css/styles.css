@@ -1,0 +1,28 @@
+body {
+    font-family: "Lato", "Open Sans", sans-serif;
+    font-weight: 400;
+    margin: 10px auto;
+    text-align: center;
+    background-color: rgb(252, 247, 221);
+}
+p {
+    line-height: 1.5rem;
+    margin: 20px auto;
+    text-align: left;
+    width: 340px;
+    background-color: white;
+    border: solid thin black;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    font-size: 1.25;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: double thick #feaace;
+    background-color: aliceblue;
+}
+footer {
+    padding: 40px;
+    margin-top: 10px;
+}

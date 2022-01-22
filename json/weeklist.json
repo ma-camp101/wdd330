@@ -2,11 +2,15 @@
 "weeks": [
     {
       "url": "week1/index.html",
-      "label": "Week 1 Notes"
+      "label": "Week 1 Notes and Activities"
     },
     {
       "url": "week2/index.html",
-      "label": "Week 2 Notes"
+      "label": "Week 2 Notes and Activities"
+    },
+    {
+      "url": "week3/index.html",
+      "label": "Week 3 Notes and Activities"
     }
   ]
 }
