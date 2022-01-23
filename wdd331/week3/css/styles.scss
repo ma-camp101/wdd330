@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+//set breakpoint sizes
+$break-small: 20em;
+$break-large: 60em;
+
+@mixin breakpoint($break) {
+@if $break == large {
+@media (max-width: $break-large) { @content; }
+}
+@else if $break == small {
+@media (max-width: $break-small) { @content; }
+} @else {
+@media ($break) { @content; }
+}
+
+// colors
+$color-1: #FAEBD7;
+$color-2: #6495ED;
+$color-3: #ffffff;
+$color-4: #DEB887;
+$color-5: #000000;
+$color-6: #7e7e7e;
+
+// fonts
+$font-1: "Helvetica", "Arial", sans serif;
+$font-2: "Lora";
+
+body {
+    font-family: $font-1;
+    font-weight: 400;
+    @include breakpoint(large) {  
+        .post-date {
+            display: grid;
+            grid-template-columns: 250px 750px;
+        }
+        header {
+            grid-column: 1;
+        }
+        main {
+            grid-column: 2;
+            width: 750px;
+        }
+        article {
+            width: 400px;
+            padding: 40px;
+        }
+        img {
+            margin-left: 50px;
+        }
+    }
+}
+header {
+    background-color: $color-1;
+    padding: 30px;
+    text-align: right;
+}
+h1, h2 {
+    font-family: $font-2;
+    font-weight: 700;
+}
+main, h1 a, nav ul li a {
+    color: $color-1;
+}
+h1 a:hover, nav ul li a:hover, article {
+    color: $color-3;
+}
+h2 a {
+    color: $color-5;
+}
+h2 a:hover, .post-content p a {
+    color: $color-2;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 10px;
+}
+a {
+   text-decoration: none;
+}
+*:active {
+    color: $color-4;
+}
+*:hover {
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+}
+article {
+    width: 300px;
+    box-shadow: 3px 3px 3px $color-6;
+    padding: 10px;
+    margin: 20px auto;
+}
+img {
+    width: 200px;
+    padding: 40px 10px 10px 10px;
+}
+}
