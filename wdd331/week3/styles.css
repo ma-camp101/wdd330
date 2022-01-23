@@ -7,18 +7,18 @@ body {
   background-color: darkred;
 }
 
-#contactform > {
+#contactform {
   background-color: burlywood;
 }
-#contactform > a:hover {
+#contactform a:hover {
   background-color: antiquewhite;
 }
-#contactform > input, #contactform > textarea {
+#contactform input, #contactform > textarea {
   background-color: antiquewhite;
   flex: 2;
 }
 @media (min-width: 31em) {
-  #contactform > {
+  #contactform {
     width: 90%;
     max-width: 700px;
     margin-left: auto;
@@ -26,7 +26,7 @@ body {
   }
 }
 @media (min-width: 60em) {
-  #contactform > {
+  #contactform {
     width: 70%;
     max-width: 900px;
     margin-left: auto;
@@ -34,7 +34,7 @@ body {
   }
 }
 
-#contactform fieldset > div {
+#contactform fieldset div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,12 +43,12 @@ body {
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
 }
-#contactform fieldset > div label {
+#contactform fieldset div label {
   flex: 1;
   text-align: left;
 }
 @media (min-width: 31em) {
-  #contactform fieldset > div {
+  #contactform fieldset div {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -59,7 +59,7 @@ body {
     justify-content: space-between;
     margin-bottom: 1em;
   }
-  #contactform fieldset > div label {
+  #contactform fieldset div label {
     text-align: right;
     margin-right: 1em;
   }

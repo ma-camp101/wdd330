@@ -54,7 +54,7 @@ body {
     background-color: $body-background-color;
 }
 
-#contactform >{
+#contactform {
     background-color: $form-background-color;
      a:hover {
         background-color: antiquewhite;
@@ -67,7 +67,7 @@ body {
     @include breakpoint(large) {  @include center(900px, 70%) }
 }
 
-#contactform fieldset>div {
+#contactform fieldset div {
     @include flex-container(column);
     
     label {
