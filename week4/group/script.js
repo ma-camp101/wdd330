@@ -80,20 +80,20 @@ function checkTie() {
             isEnd = false;
         }
     });
-    if (isEnd) resetBoard("The game is a Tie")
+    if (isEnd) resetBoard("The game is a Tie!")
 }
 
 function checkWinner() {
     if (checkRow()) {
-        messageDisplay.textContent = "There is a winner";
+        messageDisplay.textContent = "There is a winner!";
         winner = false;
     }
     else if (checkColumn()) {
-        messageDisplay.textContent = "There is a winner";
+        messageDisplay.textContent = "There is a winner!";
         winner = false;
     }
     else if (checkDiagonal()) {
-        messageDisplay.textContent = "There is a winner";
+        messageDisplay.textContent = "There is a winner!";
         winner = false;
     }
 }
@@ -119,6 +119,8 @@ cells.forEach((cell) => {
 
 
 // When touched the reset button should remove all of the marks from the board.
-resetBtn.addEventListener("click", function () {
-    resetBoard("");
+resetBtn.addEventListener("click", function() {
+  cells.forEach(cell => {
+      cell.textContent = "";
+  });
 });

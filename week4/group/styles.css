@@ -1,3 +1,9 @@
+h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 48px;
+    text-align: center;
+}
+
 table td {
     border: thick solid black;
     width: 100px;
@@ -32,6 +38,11 @@ td {
     cursor: pointer;
 }
 
+.message {
+    text-align: center;
+    font-weight: 700;
+}
+
 button {
     width: 150px;
     height: 50px;
@@ -39,6 +50,7 @@ button {
     background-color: chartreuse;
     border: none;
     cursor: pointer;
+    margin: 20px;
 }
 
 div {
