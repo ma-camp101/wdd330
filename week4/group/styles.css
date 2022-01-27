@@ -1,5 +1,5 @@
 table td {
-    border: 1px solid black;
+    border: thick solid black;
     width: 100px;
     height: 100px;
 }
@@ -27,7 +27,7 @@ table tr td:last-child {
 
 td {
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
     font-family: "Dongle";
     cursor: pointer;
 }

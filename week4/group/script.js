@@ -80,20 +80,20 @@ function checkTie() {
             isEnd = false;
         }
     });
-    if (isEnd) resetBoard("The game is Tie. Please reset again the game")
+    if (isEnd) resetBoard("The game is a Tie")
 }
 
 function checkWinner() {
     if (checkRow()) {
-        messageDisplay.textContent = "There is a winner row";
+        messageDisplay.textContent = "There is a winner";
         winner = false;
     }
     else if (checkColumn()) {
-        messageDisplay.textContent = "There is a winner column";
+        messageDisplay.textContent = "There is a winner";
         winner = false;
     }
     else if (checkDiagonal()) {
-        messageDisplay.textContent = "There is a winner diagonal";
+        messageDisplay.textContent = "There is a winner";
         winner = false;
     }
 }
