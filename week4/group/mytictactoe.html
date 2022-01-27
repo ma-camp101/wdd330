@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <title>Group Activity Tic Tac Toe</title>
+    <script>
+    </script>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 100px;
+            margin: 10px auto;
+        }
+        .tictactoe {
+            font-family: "Permanent Marker", cursive;        
+            cursor: pointer;
+            line-height: 100px;
+            font-size: 60px;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .tictactoe:first-of-type {
+            grid-area: 1;
+            border-right: solid thick black;
+            border-bottom: solid thick black;
+        }
+        .tictactoe:nth-of-type(2) {
+            grid-column: 2;
+            grid-row: 1;
+            border-left: solid thick black;
+            border-bottom: solid thick black;
+            border-right: solid thick black;
+        }
+        .tictactoe:nth-of-type(3) {
+            grid-column: 3;
+            grid-row: 1;
+            border-left: solid thick black;
+            border-bottom: solid thick black;
+        }
+        .tictactoe:nth-of-type(4) {
+            grid-column: 1;
+            grid-row: 2;
+            border-top: solid thick black;
+            border-right: solid thick black;
+            border-bottom: solid thick black;
+        }
+        .tictactoe:nth-of-type(5) {
+            grid-column: 2;
+            grid-row: 2;
+            border: solid thick black;
+        }
+        .tictactoe:nth-of-type(6) {
+            grid-column: 3;
+            grid-row: 2;
+            border-top: solid thick black;
+            border-left: solid thick black;
+            border-bottom: solid thick black;
+        }
+        .tictactoe:nth-of-type(7) {
+            grid-column: 1;
+            grid-row: 3;
+            border-top: solid thick black;
+            border-right: solid thick black;
+        }
+        .tictactoe:nth-of-type(8) {
+            grid-column: 2;
+            grid-row: 3;
+            border-left: solid thick black;
+            border-top: solid thick black;
+            border-right: solid thick black;
+        }
+        .tictactoe:last-of-type {
+            grid-column: 3;
+            grid-row: 3;
+            border-left: solid thick black;
+            border-top: solid thick black;
+        }
+        button {
+           margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+   <div class="board">
+       <div data-cell-index="0" class="tictactoe"></div>
+       <div data-cell-index="1" class="tictactoe"></div>
+       <div data-cell-index="2" class="tictactoe"></div>
+       <div data-cell-index="3" class="tictactoe"></div>
+       <div data-cell-index="4" class="tictactoe"></div>
+       <div data-cell-index="5" class="tictactoe"></div>
+       <div data-cell-index="6" class="tictactoe"></div>
+       <div data-cell-index="7" class="tictactoe"></div>
+       <div data-cell-index="8" class="tictactoe"></div>
+   </div>
+   <h2 class="game--status"></h2>
+   <button class="game--restart">Restart Game</button>
+</body>
+</html>

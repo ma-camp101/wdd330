@@ -1,0 +1,42 @@
+table td {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 100px auto;
+}
+
+table tr:nth-child(1) td{
+    border-top: none;
+}
+
+table tr:nth-child(3) td {
+    border-bottom: none;
+}
+
+table tr td:nth-child(1) {
+    border-left: none;
+}
+
+table tr td:last-child {
+    border-right: none;
+}
+
+td {
+    text-align: center;
+    font-size: 35px;
+    font-family: "Dongle";
+    cursor: pointer;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: chartreuse;
+    border: none;
+    cursor: pointer;
+}
