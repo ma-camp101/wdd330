@@ -6,6 +6,9 @@ main {
     padding: 20px;
     margin-bottom: 20px;
 }
+a {
+    text-decoration: none;
+}
 header {
     display: grid;
     justify-items: center;
