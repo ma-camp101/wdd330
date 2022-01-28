@@ -2,6 +2,10 @@ body {
     font-family: "Lato", "Open Sans", sans-serif;
     width: auto;
 }
+main {
+    padding: 20px;
+    margin-bottom: 20px;
+}
 header {
     display: grid;
     justify-items: center;
