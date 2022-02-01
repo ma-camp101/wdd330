@@ -35,3 +35,6 @@ body {
       padding: 10px 0;
       width: 100vw;
   }
+  p {
+      width: 95%;
+  }
