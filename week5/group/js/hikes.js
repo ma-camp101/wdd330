@@ -53,37 +53,19 @@ const hikeList = [
   }
   function renderOneHike(hike) {
     const item = document.createElement("li");
-    item.classList.add("list");
-    console.log(item.className);
   
     item.innerHTML = ` <h2>${hike.name}</h2>
           <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
           <div>
-                  <div class="details">
+                  <div>
                       <h3>Distance</h3>
                       <p>${hike.distance}</p>
                   </div>
-                  <div class="details">
+                  <div>
                       <h3>Difficulty</h3>
                       <p>${hike.difficulty}</p>
-                  </div>
-                  <div class="details">
-                      <h3>Description</h3>
-                      <p>${hike.description}</p>
-                  </div>
-                  <div class="details">
-                      <h3>Directions</h3>
-                      <p>${hike.directions}</p>
                   </div>
           </div>`;
   
     return item;
-  }
-
-  let hikeDetails = document.querySelector(".list");
-  hikeDetails.addEventListener('click', showDetails());
-
-  function showDetails() {
-    let menu = document.querySelector(".list");
-    menu.classList.toggle(".details");
   }
