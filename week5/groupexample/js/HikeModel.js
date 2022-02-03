@@ -36,14 +36,17 @@ const hikeList = [
 ];
 // Hike Model
 export default class HikeModel {
-  constructor() {
-    // We need a constructor...but in this case it isn't doing much
+  constructor(elementId) {
+    this.parentElement = document.getElementById(elementId);
+    // we need a back button to return back to the list. This will build it and hide it. When we need it we just need to remove the 'hidden' class
+    this.backButton = this.buildBackButton();
   }
   getAllHikes() {
     // should return a list of all the hikes.
+    return hikeList;
   }
   getHikeByName(hikeName) {
     // filter the hikes for the record identified by hikeName and return it
-    return ;
+    return this.getAllHikes().find(hike => hike.name === hikeName);
   }
 }
