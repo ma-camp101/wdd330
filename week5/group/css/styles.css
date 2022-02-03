@@ -35,3 +35,11 @@ body {
   p {
       width: 95%;
   }
+ button {
+    padding: 10px 20px;
+    background-color: firebrick;
+    color: white;
+    margin-left: 20px;
+    font-weight: 700;
+  }
+  
