@@ -6,13 +6,18 @@ header {
     display: grid;
     justify-items: center;
     align-items: center;
-    background-color: rgb(136, 196, 124);
+    background-color: rgb(20, 52, 194, 90%);
+    color: white;
 }
 header h1 {
+    font-family: "Pacifico", fantasy;
+    font-weight: 400;
     font-size: 1.5rem;
 }
 header img {
-    padding-top: 10px;
+    margin: 10px 20px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(34, 34, 34, 0.9);
 }
 main {
     min-height: 350px;
@@ -35,10 +40,15 @@ footer {
     display:grid;
     grid-template-rows: 15px 15px;
     justify-items: center;
-    background-color: rgb(136, 196, 124);
+    background-color: rgb(20, 52, 194, 90%);
+    color: white;
 }
 .schoollink, a {
     text-decoration: none;
+    font-weight: 700;
+}
+.schoollink {
+    color: goldenrod;
 }
 footer .copy {
     font-size: 14px;

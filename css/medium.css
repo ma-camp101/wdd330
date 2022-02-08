@@ -6,8 +6,6 @@
     header img {
         grid-column: 2;
         justify-self: right;
-        padding-right: 10px;
-        padding-bottom: 10px;
     }
     header h1 {
     grid-row: 1;
