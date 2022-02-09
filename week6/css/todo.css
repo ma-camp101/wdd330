@@ -1,5 +1,27 @@
 body {
     font-family: "Lato", "Open Sans", sans-serif;
     font-weight: 400;
+}
+h1 {
     text-align: center;
+}
+.todo {
+    width: 360px;
+    max-width: 98%;
+    margin: 20px auto;
+}
+.input {
+    display: block;
+    width: 90%;
+    padding: 10px 20px;
+}
+input::placeholder {
+    color: #c5c5c5;
+}
+.getDone span {
+    padding: 5px 0;
+    cursor: pointer;
+}
+.done {
+    text-decoration: line-through;
 }
