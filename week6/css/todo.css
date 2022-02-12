@@ -20,8 +20,12 @@ h1 {
     opacity: 0.4;
 }
 
+p {
+    text-align: center;
+}
+
 button {
-    padding: 10px 20px;
+    padding: 2px 10px;
     font-weight: 700;
 }
 
@@ -58,12 +62,22 @@ form {
 }
 
 .todos li {
-    border-top: 1px solid #e5e5e5;
+    border: 1px solid #e5e5e5;
     cursor: pointer;
     padding: 1rem 2rem;
+}
+
+.todos li span {
+    padding: 0 10px;
 }
 
 .todos li.completed {
     color: #b6b6b6;
     text-decoration: line-through;
+}
+.hide {
+    display: none;
+}
+.remove {
+    float: right;
 }

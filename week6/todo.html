@@ -21,17 +21,24 @@
         <form id="form">
             <input type="text" id="input" class="input" placeholder="Enter your todo" autocomplete="off"/>
             <p class="legend">
-                <button>✅ Todo Done</button>  &nbsp; <button>❌ Delete Todo</button> 
+                ✅ Todo Done &nbsp; ❌ Delete Todo
             </p>
             <ul class="todos" id="todos"></ul>
         </form>
     </main>
     <footer>
         <div class="taskTracker">
-            <p></p>
+            <p>
+                <span class="count"></span> tasks left  &nbsp;
+                <button class="all">All</button>  
+                <button class="active">Active</button>  
+                <button class="completed">Completed</button>
+            </p>
         </div>
     </footer>
-    <script src="js/todo.js"></script>
+    <script src="js/ls.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/todo.js"></script>
+    
 </body>
 </html>

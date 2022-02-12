@@ -4,9 +4,9 @@ const input = document.getElementById("input");
 const todosUL = document.getElementById("todos");
 const todos = JSON.parse(localStorage.getItem("todos"));
 
-
 if (todos) {
     todos.forEach((todo) => {
+  
         addTodo(todo);
     });
 }
@@ -15,6 +15,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     addTodo();
+    countActive();
 });
 
 function addTodo(todo) {
@@ -26,20 +27,27 @@ function addTodo(todo) {
 
     if (todoText) {
         const todoEl = document.createElement("li");
+        // todoEl.innerText = todoText;
         const done = document.createElement("button");
         done.innerHTML = '✅';
+        todoEl.appendChild(done);
+        const text = document.createElement("span");
+        text.innerHTML = todoText;
+        todoEl.appendChild(text);
         const remove = document.createElement("button");
+        remove.classList.add("remove");
         remove.innerHTML = '❌';
+        todoEl.appendChild(remove);
+
         if (todo && todo.completed) {
-            done.classList.add("completed");
+            todoEl.classList.add("completed");
         }
 
-        todoEl.innerText = todoText;
-
         done.addEventListener("click", () => {
-            done.classList.toggle("completed");
+            todoEl.classList.toggle("completed");
 
             updateLS();
+            countActive();
         });
 
         remove.addEventListener("click", (e) => {
@@ -48,6 +56,7 @@ function addTodo(todo) {
             todoEl.remove();
 
             updateLS();
+            countActive();
         });
 
         todosUL.appendChild(todoEl);
@@ -55,21 +64,6 @@ function addTodo(todo) {
         input.value = "";
 
         updateLS();
-    }
-    
-    function updateLS() {
-        const todosEl = document.querySelectorAll("li");
-    
-        const todos = [];
-    
-        todosEl.forEach((todoEl) => {
-            todos.push({
-                text: todoEl.innerText,
-                completed: todoEl.classList.contains("completed"),
-            });
-        });
-    
-        localStorage.setItem("todos", JSON.stringify(todos));
     }
 }
 
