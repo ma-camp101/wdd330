@@ -81,3 +81,6 @@ form {
 .remove {
     float: right;
 }
+.count {
+    font-weight: 700;
+}
