@@ -16,20 +16,22 @@
 <body>
     <Header>
         <h1>To Do List</h1>
-        <hr>
     </Header>
     <main>
-        <form class="todo">
-            <input type="text" class="input" placeholder="Enter Todo here">
+        <form id="form">
+            <input type="text" id="input" class="input" placeholder="Enter your todo" autocomplete="off"/>
             <p class="legend">
-                ✅ = Todo Done &nbsp; ❌ = Delete Todo
+                <button>✅ Todo Done</button>  &nbsp; <button>❌ Delete Todo</button> 
             </p>
-            <div class="getDone"></div>
+            <ul class="todos" id="todos"></ul>
         </form>
     </main>
     <footer>
-        <div class="taskTracker"></div>
+        <div class="taskTracker">
+            <p></p>
+        </div>
     </footer>
     <script src="js/todo.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
 </html>
