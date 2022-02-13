@@ -7,4 +7,15 @@ h1, h2, h3 {
     font-weight: 700;
     padding: 10px 20px;
     text-align: center;
+    color: darkblue;
+    opacity: 40%;
+}
+.reverse, #reverse {
+    margin-left: 45px;
+    padding: 5px 5px;
+}
+section {
+    width: 360px;
+    border: solid 2px #857e7e;
+    margin: 10px auto;
 }
