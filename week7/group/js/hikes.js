@@ -109,6 +109,7 @@ function renderHikeList(parent, hikes) {
       parent.appendChild(renderOneHike(hike));
     });
 }
+
 // Function to create the structure of the li element
 function renderOneHike(hike) {
   const item = document.createElement("li");
@@ -124,7 +125,7 @@ function renderOneHike(hike) {
               <h3>Difficulty</h3>
               <p>${hike.difficulty}</p>
           </div>
-  </div>` ;
+  </div>`;
   return item;
 }
 
