@@ -115,7 +115,7 @@ function renderOneHike(hike) {
   item.setAttribute('data-name', hike.name); // set attribute to get the value of the name in addHikeListener()
   item.innerHTML =  `<h2>${hike.name}</h2>
   <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
-  <div>
+  <div class="info">
           <div>
               <h3>Distance</h3>
               <p>${hike.distance}</p>
@@ -135,7 +135,7 @@ function renderOneHikeFull(hike) {
   item.classList.add('oneHike'); // add class for styling purposes
   item.innerHTML =  `<h2>${hike.name}</h2>
   <div><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
-  <div>
+  <div class="info">
           <div>
               <h3>Distance</h3>
               <p>${hike.distance}</p>

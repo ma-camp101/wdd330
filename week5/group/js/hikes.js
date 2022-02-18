@@ -51,7 +51,7 @@ export default class Hikes {
 
   // Function to use to find a specific name inside the object and return the object
   getHikeByName(hikeName) {
-  console.log(JSON.stringify(this.getAllHikes().find(hike => hike.name === hikeName))); // for checking if we got the right object
+  // console.log(JSON.stringify(this.getAllHikes().find(hike => hike.name === hikeName))); // for checking if we got the right object
   return this.getAllHikes().find(hike => hike.name === hikeName);
   }
 
