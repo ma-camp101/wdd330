@@ -56,11 +56,22 @@ body {
     margin-left: 20px;
     font-weight: 700;
   }
-  .info {
+  .info, .all-comments {
     background-color: aliceblue;
     padding: 10px;
     margin-right: 30px;
+    border: 1px solid #4f4f4f;
+    width: 40vw;
   }
-  .hidebutton {
+  #input-comment {
+    margin: 10px;
+  }
+  .comments, .all-comments {
+    margin: 10px 20px;
+  } 
+  .hide {
       display: none;
+  }
+  .all-comments {
+    width: 89vw;
   }
