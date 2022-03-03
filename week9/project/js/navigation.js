@@ -1,4 +1,4 @@
 function switchMenu() {
-    let menu = document.querySelector(".menu");
+    let menu = document.querySelector(".navbar");
     menu.classList.toggle("hide");
 }
