@@ -19,6 +19,15 @@
             font-family: "Dancing Script", "Rouge Script", fantasy;
             font-weight: 700;
         }
+        .wireframes {
+            display: flex;
+            flex-direction: column;
+        }
+        @media only screen and (min-width: 1024px) {
+            .wireframes {
+                flex-direction: row;
+            }
+        }
     </style>
 </head>
 <body>
@@ -80,9 +89,11 @@
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <img src="" alt="small view wireframe">
-                <img src="" alt="medium view wireframe">
-                <img src="" alt="large view wireframe">
+                <div class="wireframes">
+                    <img src="" alt="small view wireframe">&nbsp;
+                    <img src="" alt="medium view wireframe">&nbsp;
+                    <img src="" alt="large view wireframe">
+                </div>
             </section>
             <section>
                 <h2>Colors/Typography/Styling</h2>
