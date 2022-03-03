@@ -10,17 +10,27 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-            <header>
-                <picture class="banner">
-                    <source media="(max-width:400px)" srcset="images/rsz_1rsz_1rsz_renee-fisher-ltkf2tdx9ui-unsplash.jpg">
-                    <source media="(max-width:820px)" srcset="images/rsz_1rsz_renee-fisher-ltkf2tdx9ui-unsplash.jpg">
-                    <img src="images/rsz_renee-fisher-ltkf2tdx9ui-unsplash.jpg" alt="white spraypaint stencil of fat man running, transition arrow, then fit man running on green wall">
-                </picture>
-                <h1>Fitness Journal</h1>
-            </header>
+        <header>
+            <picture class="banner">
+                <source media="(max-width:420px)" srcset="images/renee-fisher-ltkf2tdx9ui-unsplash-small.jpg">
+                <source media="(max-width:820px)" srcset="images/renee-fisher-ltkf2tdx9ui-unsplash-medium.jpg">
+                <img src="images/renee-fisher-ltkf2tdx9ui-unsplash-large.jpg" alt="white spraypaint stencil of fat man running, transition arrow, then fit man running on green wall">
+            </picture>
+            <h1>Fitness Journal</h1>
+        </header>
+        <nav>
+            <ul class="navbar"> 
+                <li><a class="listItem" onclick="switchMenu()" href="#">&#9776;</a></li>
+                <li><a class="listItem" href="index.html">Home</a></li>
+                <li><a class="listItem active" href="fishhaven.html">Fish Haven</a></li>
+                <li><a class="listItem" href="preston.html">Preston</a></li>
+                <li><a class="listItem" href="sodasprings.html">Soda Springs</a></li>
+                <li><a class="listItem" href="stormcenter.html">Storm Center</a></li>
+                <li><a class="listItem" href="gallery.html">Image Gallery</a></li>
+            </ul>
+        </nav>
         <main>
-            <h2>WDD 330: Portfolio</h2>
-            <hr>
+            <h2></h2>
             <div class="weeks"></div>
         </main>
         <footer>
@@ -29,5 +39,6 @@
         </footer>
         <script src="js/dates.js"></script> 
         <script src="js/main.js"></script>
+        <script src="js/navigation.js"></script>
     </body>
 </html>

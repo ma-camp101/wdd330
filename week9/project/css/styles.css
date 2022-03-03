@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Rouge+Script&display=swap");
+body {
+  background-color: aliceblue;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner img {
+  width: 100vw;
+}
+
+h1 {
+  font-family: "Dancing Script", "Rouge Script", fantasy;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+main {
+  min-width: 300px;
+}
+
+footer {
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
