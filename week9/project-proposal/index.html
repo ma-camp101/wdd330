@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mike Camp's Project Proposal for WDD330: Web Front-End Development 2 BYUI">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Rouge+Script&display=swap" rel="stylesheet">
+    <title>Project Proposal</title>
+    <style>
+        body {
+            font-family: "Roboto", "Open Sans", sans-serif;
+            font-weight: 400;
+            background-color: aliceblue;
+        }
+        h1, h2, h3 {
+            font-family: "Dancing Script", "Rouge Script", fantasy;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Proposal</h1> 
+    </header>
+    <main>
+        <div>
+            <section>
+                <h2>Purpose</h2>
+                <p>
+                    The vision I have for this website is a personal fitness tracker and journal.
+                    I want a goal list (Todo App), the current weather (Weather API), Achievement 
+                    Page (Gallery w/ CSS effects and utilizing a JSON File), a support system page 
+                    with a contact info form and list the user can build as well as links to mental, 
+                    emotional, and physical support programs, a banner with a new motivational quote 
+                    each day, and a last visited date (Local Storage). There will be an about page 
+                    explaining the purpose of the site and some background information about me and
+                    why I set this up. On the main page, I will have a form for the user to add
+                    before front and side view pictures with placeholders. 
+                </p>
+            </section>
+            <section>
+                <h2>Audience</h2>
+                <p>
+                    The focus of this website is rather broad, although the main user base I see as 
+                    being 16+ years of age. Anyone who is interested in tracking their progress and 
+                    fitness should find this site useful. Parents can use it in support of children,
+                    Adults for their personal use or a support for a friend, etc.   
+                </p>
+            </section>
+            <section>
+                <h2>Data Sources</h2>
+                <ul>
+                    <li>
+                        At least one API. I would like to have two, a weather API and a fitness API, 
+                        although I will have to researh that
+                    </li>
+                    <li>
+                        A JSON file for the Achievements page. I like using JSON for lists that need 
+                        to be updated regularly. It makes for a nice organized format.
+                    </li>
+                    <li>
+                        I will be using Local Storage to show the last visited date as a motivator.
+                    </li>
+                    <li>
+                        srcset will be used for pictures to maintain responsiveness. 
+                    </li>
+                    <li>
+                        There may be additions to the Data Types as I develop the site over the 
+                        next few weeks.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Module List</h2>
+                <ul>
+                    
+                </ul>
+            </section>
+            <section>
+                <h2>Wireframes</h2>
+                <img src="" alt="small view wireframe">
+                <img src="" alt="medium view wireframe">
+                <img src="" alt="large view wireframe">
+            </section>
+            <section>
+                <h2>Colors/Typography/Styling</h2>
+                <h3>Colors</h3>
+                <h3>Typography</h3>
+                <ol>
+                    <li>
+                        headings: Dancing Script, with backups of Rouge Script and fantasy
+                    </li>
+                    <li>
+                        Body: Roboto, with backups of Open Sans and Sans serif
+                    </li>
+                </ol>
+                <h3>Styling</h3>
+                <p>
+                    Grid, Block, and Flex will be used where appropriate. I will be utilizing hover, 
+                    before and after, transition, and color changes on click events. There will be 
+                    placeholders for images and lazy loading to improve page performance and 
+                    responsiveness. 
+                </p>
+            </section>
+            <section>
+                <h2>Schedule</h2>
+                <ol>
+                    <li>
+                        Week 9: Concept developed and Proposal written, as well as basic
+                        page framework built.
+                    </li>
+                    <li>
+                        Week 10: Research APIs that would apply. Build goals list page. 
+                        Add basic CSS for the site.
+                    </li>
+                    <li>
+                        Week 11: Build main and about pages.
+                    </li>
+                    <li>
+                        Week 12: Build achievements and support pages.
+                    </li>
+                    <li>
+                        Week 13: Finish any left-over work and polish the site. The 
+                        Attribution page will be a basic list of source links for pictures
+                        and APIs used, along with the site header, navbar, and footer.
+                    </li>
+                    <li>
+                        Submit finished project.
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="copy">&copy; <span id="year"></span> | Mike Camp | Pennsylvania | <a class="schoollink" href="https://www.byui.edu/online">BYUI Online Learning</a></p><br>
+        <p class="modified"><strong><span id="modified"></span></strong></p> 
+    </footer>
+    <script>
+        document.querySelector("#year").textContent = new Date().getFullYear();
+        document.querySelector("#modified").textContent = `Last Updated: ${document.lastModified}`;
+    </script>
+</body>
+</html>

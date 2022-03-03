@@ -8,14 +8,26 @@
 </head>
 <body>
     <header>
-        <picture>
-            <source media="(max-width:400px)" srcset="images/rsz_1rsz_1rsz_renee-fisher-ltkf2tdx9ui-unsplash.jpg">
-            <source media="(max-width:800px)" srcset="images/rsz_1rsz_renee-fisher-ltkf2tdx9ui-unsplash.jpg">
-            <img src="images/rsz_1rsz_1rsz_renee-fisher-ltkf2tdx9ui-unsplash.jpg" alt="white spraypaint stencil of fat man running, transition arrow, then fit man running on green wall">
+        <picture class="banner">
+            <source media="(max-width:420px)" srcset="images/renee-fisher-ltkf2tdx9ui-unsplash-small.jpg">
+            <source media="(max-width:820px)" srcset="images/renee-fisher-ltkf2tdx9ui-unsplash-medium.jpg">
+            <img src="images/renee-fisher-ltkf2tdx9ui-unsplash-large.jpg" alt="white spraypaint stencil of fat man running, transition arrow, then fit man running on green wall">
         </picture>
         <h1>Fitness Journal</h1>
     </header>
+    <nav>
+        <ul class="navbar"> 
+            <li><a class="listItem" onclick="switchMenu()" href="#">&#9776;</a></li>
+            <li><a class="listItem active" href="index.html">Home</a></li>
+            <li><a class="listItem" href="goals.html">Goals</a></li>
+            <li><a class="listItem" href="meals.html">Meal Planner</a></li>
+            <li><a class="listItem" href="support.html">Support</a></li>
+            <li><a class="listItem" href="achievements.html">Achievements</a></li>
+            <li><a class="listItem" href="attribution.html">Attribution</a></li>
+        </ul>
+    </nav>
     <main>
+
         <p>Photo by <a href="https://unsplash.com/@reneefisherandco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Renee Fisher</a> on <a href="https://unsplash.com/s/photos/fitness?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p> 
     </main>
     <footer>
