@@ -8,42 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Rouge+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Project Proposal</title>
-    <style>
-        body {
-            font-family: "Roboto", "Open Sans", sans-serif;
-            font-weight: 400;
-            background-color: aliceblue;
-        }
-        h1 {
-            text-align: center;
-        }
-        h1, h2, h3 {
-            font-family: "Dancing Script", "Rouge Script", fantasy;
-            font-weight: 700;
-        }
-        .wireframes {
-            display: flex;
-            flex-direction: column;
-        }
-        footer {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-        .schoollink {
-            text-decoration: none;
-        }
-        @media only screen and (min-width: 1024px) {
-            .wireframes {
-                flex-direction: row;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Project Proposal</h1> 
+        <h2 class="name">Fitness Journal</h2>
+        <h2 class="name">Mike Camp</h2>
     </header>
     <main>
         <div>
@@ -55,7 +28,7 @@
                     Page (Gallery w/ CSS effects and utilizing a JSON File), a support system page 
                     with a contact info form and list the user can build as well as links to mental, 
                     emotional, and physical support programs, a banner with a new motivational quote 
-                    each day, and a last visited date (Local Storage). There will be a meal Planner
+                    each day, and a last visited date (Local Storage). There will be a meal planner
                     page with a form with days of the week. On the main page, I will have a form for
                     the user to add before front and side view pictures with placeholders. 
                 </p>
@@ -71,7 +44,7 @@
             </section>
             <section>
                 <h2>Data Sources</h2>
-                <ul>
+                <ul class="data">
                     <li>
                         At least one API. I would like to have two, a weather API and a fitness API, 
                         although I will have to researh that
@@ -101,21 +74,37 @@
             <section>
                 <h2>Wireframes</h2>
                 <div class="wireframes">
-                    <img src="" alt="small view wireframe">&nbsp;
-                    <img src="" alt="medium view wireframe">&nbsp;
-                    <img src="" alt="large view wireframe">
+                    <div id="small">
+                        <h3>Small</h3>
+                        <img src="images/rsz_small_wireframe.png" alt="small view wireframe">
+                    </div><br>
+                    <div id="medium">
+                        <h3>Medium</h3>
+                        <img src="images/rsz_medium_wireframe.png" alt="medium view wireframe">
+                    </div><br><br>
+                    <div id="large">
+                        <h3>Large</h3>
+                        <img src="images/rsz_1largewireframe.png" alt="large view wireframe">
+                    </div>
                 </div>
             </section>
             <section>
                 <h2>Colors/Typography/Styling</h2>
                 <h3>Colors</h3>
+                <div class="color-section">
+                    <div class="colors" id="color1">Black</div>
+                    <div class="colors" id="color2">Navy</div>
+                    <div class="colors" id="color3">Aliceblue</div>
+                    <div class="colors" id="color4">Burgundy</div>
+                </div>
                 <h3>Typography</h3>
-                <ol>
+                <ol class="typo">
                     <li>
-                        headings: Dancing Script, with backups of Rouge Script and fantasy
+                        <strong>Headings:</strong> <span id="heading-1">Dancing Script</span>, with backups of 
+                        <span id="heading-2">Rouge Script</span> and <span id="heading-3">cursive</span>
                     </li><br>
                     <li>
-                        Body: Roboto, with backups of Open Sans and Sans serif
+                        <strong>Body:</strong> Roboto, with backups of <span id="body-2">Open Sans</span> and <span id="body-3">sans serif</span>
                     </li>
                 </ol>
                 <h3>Styling</h3>
@@ -128,29 +117,29 @@
             </section>
             <section>
                 <h2>Schedule</h2>
-                <ol>
+                <ol class="typo">
                     <li>
-                        Week 9: Concept developed and Proposal written, as well as basic
+                        <strong>Week 9:</strong> Concept developed and Proposal written, as well as basic
                         page framework built.
                     </li><br>
                     <li>
-                        Week 10: Research APIs that would apply. Build main and goals page. 
+                        <strong>Week 10:</strong> Research APIs that would apply. Build main and goals page. 
                         Add basic CSS for the site.
                     </li><br>
                     <li>
-                        Week 11: Build meal planner page. I anticipate this will be a heavy
+                        <strong>Week 11:</strong> Build meal planner page. I anticipate this will be a heavy
                         build, which is why I am giving it a week.
                     </li><br>
                     <li>
-                        Week 12: Build achievements and support pages.
+                        <strong>Week 12:</strong> Build achievements and support pages.
                     </li><br>
                     <li>
-                        Week 13: Finish any left-over work and polish the site. The 
+                        <strong>Week 13:</strong> Finish any left-over work and polish the site. The 
                         Attribution page will be a basic list of source links for pictures
                         and APIs used, along with the site header, navbar, and footer.
                     </li><br>
                     <li>
-                        Submit finished project.
+                        <strong>Week 14:</strong> Submit finished project.
                     </li>
                 </ol>
             </section>
