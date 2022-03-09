@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Open+Sans&family=Sansita+Swashed:wght@300;400;700&display=swap');
+
+main {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    font-family: 'Merriweather Sans', 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 400;
+}
+input:invalid {
+	border: solid thick #fdd;
+	color: #000;
+}
+input:valid {
+	border: solid thick #dfd;
+	color: #000;
+}
