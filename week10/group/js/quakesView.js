@@ -2,9 +2,8 @@
 export default // Quake View handler
 class QuakesView {
   renderQuakeList(quakeList, listElement) {
-
-    listElement.innerHTML = quakeList.features
-      .map(quake => {
+    listElement.classList.add('showDetail');
+    listElement.innerHTML = quakeList.features.map(quake => {
         return `<li data-id=${quake.id}>${quake.properties.title}, ${new Date(
           quake.properties.time
         )}</li>`;
