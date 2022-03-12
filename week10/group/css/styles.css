@@ -21,17 +21,32 @@ h1 {
     padding: 10px 30px;
 }
 
- ul li {
+#mainNav {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 10px;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#mainNav li a {
+    color: azure;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.quakeStyles li {
     list-style-type: circle;
     font-size: 1.5rem;
     line-height: 1.5rem;
     padding: 10px;
 }
 
-ul li:nth-of-type(odd) {
+.quakeStyles li:nth-of-type(odd) {
     margin-right: 20px;
 }
 
-ul li:nth-of-type(even) {
+.quakeStyles li:nth-of-type(even) {
     margin-left: 20px;
 }
