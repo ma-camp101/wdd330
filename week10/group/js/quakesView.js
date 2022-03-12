@@ -4,9 +4,8 @@ class QuakesView {
   renderQuakeList(quakeList, listElement) {
     listElement.classList.add('showDetail');
     listElement.innerHTML = quakeList.features.map(quake => {
-        return `<li data-id=${quake.id}>${quake.properties.title}, ${new Date(
-          quake.properties.time
-        )}</li>`;
+        return `<li data-id=${quake.id}>${quake.properties.title}, 
+        ${new Date(quake.properties.time)}</li>`;
       })
       .join('');
   }
@@ -15,10 +14,8 @@ class QuakesView {
 
   renderQuake(quake, element) {
 
-    var backButton = document.createElement("button");
-    backButton.setAttribute('onclick', window.location.reload());
-    backButton.classList.add("backHome");
-    backButton.innerHTML = "Go Back";
+    var backButton = document.createElement("div");
+    backButton.innerHTML = `<button class="backHome" onclick="window.location.reload()">Go Back</button>`
 
     const quakeProperties = Object.entries(quake.properties);
     element.innerHTML = quakeProperties.map(item => {
