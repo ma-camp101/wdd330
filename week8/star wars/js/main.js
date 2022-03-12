@@ -69,8 +69,11 @@ function pageLoad(peopleAPI) {
 
         for (var i = 0; i < character.results.length; i++) {
 
-        let oneCharacter = new People(character.results[i].name, 
-            character.results[i].height, character.results[i].mass, character.results[i].hair_color, 
+        let oneCharacter = new People(
+            character.results[i].name, 
+            character.results[i].height, 
+            character.results[i].mass, 
+            character.results[i].hair_color, 
             character.results[i].skin_color, 
             character.results[i].eye_color, 
             character.results[i].birth_year, 
