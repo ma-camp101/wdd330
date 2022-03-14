@@ -1,6 +1,5 @@
 // Quake View handler
-export default // Quake View handler
-class QuakesView {
+export default class QuakesView {
   renderQuakeList(quakeList, listElement) {
     listElement.classList.add('showDetail');
     listElement.innerHTML = quakeList.features.map(quake => {
