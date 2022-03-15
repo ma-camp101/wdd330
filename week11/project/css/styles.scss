@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Rouge+Script&display=swap');
+body {
+    background-color: aliceblue;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner img {
+    width: 100vw;
+}
+
+h1 {
+    font-family: "Dancing Script", "Rouge Script", fantasy;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    margin-left: -45px;
+}
+
+.navbar li a:first-child {
+    display: block;
+}
+
+.listItem {
+    display: none;
+    background-color: #000000;
+    color: #ffff;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.listItem:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+.hide li {
+    display: none;
+}
+.hide li:first-child {
+    display: block;
+}
+.active {
+    background-color: #1d4861;
+    color: #ffff;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+main {
+    min-height: 300px;
+}
+footer {
+    margin: 0;
+}
+
+@media only screen and (min-width: 750px) {
+    .navbar {
+        flex-direction: row;
+        justify-content:space-evenly;
+        padding-left: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+    .navbar li:first-child {
+        display: none;
+    }
+    .navbar li {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
