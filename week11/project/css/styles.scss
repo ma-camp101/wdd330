@@ -65,6 +65,61 @@ h1 {
 main {
     min-height: 300px;
 }
+.summary {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 10px;
+    width: 400px;
+    position: relative;
+    background-color: #1d4861;
+    opacity: 90%;
+    color: #ffffff;
+    border: solid thin #1d4861;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px #000000;
+    margin-top: 50px;
+}
+.summary h2 {
+    grid-column: 1/span 2;
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 0;
+}
+#currenticon {
+    width: 80px;
+    grid-column: 1/span 2;
+    grid-row: 2;
+    justify-self: center;
+    margin-top: -20px;
+}
+.title {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: right;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding-left: 0;
+    margin-top: -20px;
+}
+.temperature {
+    grid-column: 2;
+    grid-row: 3;
+    list-style-type: none;
+    font-weight: 600;
+    padding-left: 0;
+    font-size: 1.25rem;
+    margin-top: -20px;
+}
+.forecast {
+    display: flex;
+    flex-direction: row;
+}
+.days {
+    padding: 10px;
+    list-style-type: none;
+    margin-left: 10px;
+}
 footer {
     margin: 0;
 }

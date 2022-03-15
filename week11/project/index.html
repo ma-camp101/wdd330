@@ -33,7 +33,33 @@
         <main>
             <section class="startPointImages"></section>
             <section class="motivation"></section>
-            <section class="weather"></section>
+            <section class="weather">
+                <div class="summary">
+                    <h2>Weather Summary</h2>
+                    <img src="" alt="" id="currenticon">
+                    <ul class="title">
+                        <li>Current Conditions:</li>
+                        <li>Current Temp:</li>
+                        <li>High:</li>
+                        <li>Wind Chill:</li>
+                        <li>Humidity:</li>
+                        <li>Wind Speed:</li>
+                    </ul>
+                    <ul class="temperature">
+                        <li><span id="weatherdesc"></span></li>
+                        <li><span id="temp"></span></li>
+                        <li><span id="hightemp"></span></li>
+                        <li><span id="output"></span></li>
+                        <li><span id="humidity"></span></li>
+                        <li><span id="wind"></span></li>
+                    </ul>
+                    <ul class="forecast">
+                        <li class="days"><span id="dayofweek1"></span>&nbsp;<img src="" alt="" id="icon1">&nbsp;<span id="forecast1"></span></li>
+                        <li class="days"><span id="dayofweek2"></span>&nbsp;<img src="" alt="" id="icon2">&nbsp;<span id="forecast2"></span></li>
+                        <li class="days"><span id="dayofweek3"></span>&nbsp;<img src="" alt="" id="icon3">&nbsp;<span id="forecast3"></span></li>
+                    </ul>
+                </div>
+            </section>
             <article class="currentEvents"></article>
             <picture class="hypeUpImage"></picture>
             <section class="schedule"></section>
@@ -45,5 +71,7 @@
         <script src="js/dates.js"></script> 
         <script src="js/main.js"></script>
         <script src="js/navigation.js"></script>
+        <script src="js/weatherforecast.js"></script>
+        <script src="js/windchill.js"></script>
     </body>
 </html>
