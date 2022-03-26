@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mike Camp's Project for WDD330: Web Front-End Development 2 BYUI">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Rouge+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Meal Planner</title>
+    <link rel="stylesheet" href="../scss/custom.scss">
+<title>Meal Planner</title>
 </head>
 <body>
     <header>
-        <picture class="banner">
-            <source media="(max-width:420px)" srcset="images/renee-fisher-ltkf2tdx9ui-unsplash-small.jpg">
-            <source media="(max-width:820px)" srcset="images/renee-fisher-ltkf2tdx9ui-unsplash-medium.jpg">
-            <img src="images/renee-fisher-ltkf2tdx9ui-unsplash-large.jpg" alt="white spraypaint stencil of fat man running, transition arrow, then fit man running on green wall">
-        </picture>
-        <h1>Fitness Journal</h1>
+        <div class="container-fluid header">
+            <h1>Fitness Journal</h1>
+        </div>
     </header>
-    <nav>
+<nav>
         <ul class="navbar"> 
             <li><a class="listItem" onclick="switchMenu()" href="#">&#9776;</a></li>
             <li><a class="listItem" href="index.html">Home</a></li>
@@ -35,8 +36,8 @@
     <footer>
         <p class="copy">&copy; <span id="year"></span> | Mike Camp | Pennsylvania | <a class="schoollink" href="https://www.byui.edu/online">BYUI Online Learning</a></p><br>
     </footer>
-    <script src="js/dates.js"></script> 
-    <script src="js/main.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="../js/index.js" type="module"></script>
+    <script src="../js/dates.js"></script> 
+    <script src="../js/navigation.js"></script>
 </body>
 </html>
