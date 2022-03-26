@@ -133,7 +133,7 @@ main {
 }
 
 footer {
-  height: auto;
+  height: 75px;
   display: grid;
   grid-template-rows: 15px 15px;
   justify-items: center;
