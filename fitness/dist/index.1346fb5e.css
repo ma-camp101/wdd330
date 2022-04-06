@@ -11435,22 +11435,13 @@ textarea.form-control-lg {
 }
 
 body {
-  background-color: #f0f8ff;
   font-family: Roboto, Open Sans, sans-serif;
   font-weight: 400;
 }
 
 .header {
-  height: 200px;
-  background-color: #107762;
-  background-image: url("renee-fisher-ltkf2tdx9ui-unsplash-large.32e033d4.jpg");
-  background-size: cover;
   flex-direction: column;
   display: flex;
-}
-
-.banner img {
-  width: 100vw;
 }
 
 h1, .h1 {
@@ -11506,7 +11497,10 @@ h1, .h1 {
 }
 
 main {
-  min-height: 300px;
+  width: 100vw;
+  background-color: #107762;
+  background-image: url("renee-fisher-ltkf2tdx9ui-unsplash-large.32e033d4.jpg");
+  background-size: center;
 }
 
 .summary {

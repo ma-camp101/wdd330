@@ -1,7 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
-    background-color: aliceblue;
     font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 400;
 }
@@ -9,14 +8,6 @@ body {
 .header {
     display: flex;
     flex-direction: column;
-    background-image: url('../images/renee-fisher-ltkf2tdx9ui-unsplash-large.jpg');
-    background-size: cover;
-    background-color: #107762;
-    height: 200px;
-}
-
-.banner img {
-    width: 100vw;
 }
 
 h1 {
@@ -68,7 +59,10 @@ h1 {
 }
 
 main {
-    min-height: 300px;
+    width: 100vw;
+    background-color: #107762;
+    background-image: url('../images/renee-fisher-ltkf2tdx9ui-unsplash-large.jpg');
+    background-size: center;
 }
 .summary {
     display: grid;
