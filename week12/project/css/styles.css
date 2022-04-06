@@ -8,14 +8,22 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  background-image: url("../images/renee-fisher-ltkf2tdx9ui-unsplash-large.jpg");
-  background-size: cover;
-  background-color: #107762;
-  height: 200px;
+  background-color: maroon;
+  height: 100px;
+}
+
+.banner {
+  width: 150px;
+  margin: 5px;
+}
+
+.banner:hover {
+  transform: scale(1.1);
+  opacity: 80%;
 }
 
 .banner img {
-  width: 100vw;
+  border-radius: 3px;
 }
 
 h1 {
@@ -23,55 +31,17 @@ h1 {
   font-weight: 700;
   text-align: center;
   position: relative;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  margin-top: -3px;
-  margin-bottom: -3px;
-  margin-left: -45px;
-}
-
-.navbar li a:first-child {
-  display: block;
-}
-
-.listItem {
-  display: none;
-  background-color: #000000;
-  color: #ffff;
-  text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-}
-
-.listItem:hover {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.hide li {
-  display: none;
-}
-
-.hide li:first-child {
-  display: block;
-}
-
-.active {
-  background-color: #1d4861;
-  color: #ffff;
-  text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
+  margin-top: -70px;
+  margin-left: 100px;
+  color: aliceblue;
 }
 
 main {
   min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .summary {
@@ -82,10 +52,9 @@ main {
   position: relative;
   background-color: #1d4861;
   opacity: 90%;
-  color: #ffffff;
+  color: aliceblue;
   border: solid thin #1d4861;
   border-radius: 5px;
-  box-shadow: 5px 10px 15px #000000;
   margin-top: 50px;
 }
 
@@ -136,21 +105,84 @@ main {
   margin-left: 10px;
 }
 
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  width: 400px;
+  min-height: 200px;
+  margin: 10px;
+  border: solid thick #1d4861;
+  border-radius: 3px;
+}
+
+.todo {
+  width: 360px;
+  max-width: 98%;
+  margin: 20px auto;
+  min-height: 200vh;
+}
+
+.input {
+  display: block;
+  width: 90%;
+  padding: 5px 15px;
+  color: #444;
+  border: none;
+  margin-top: 5px;
+}
+
+input::placeholder {
+  color: #c5c5c5;
+}
+
+.todos {
+  background-color: aliceblue;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todos li {
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+.todos li span {
+  padding: 0 10px;
+}
+
+.todos li.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+.hide {
+  display: none;
+}
+
+.remove {
+  float: right;
+}
+
+.count {
+  font-weight: 700;
+}
+
 footer {
   height: 75px;
   display: grid;
   grid-template-rows: 15px 15px;
   justify-items: center;
-  background-color: #107762;
-  color: white;
+  background-color: maroon;
+  color: aliceblue;
 }
 
 .schoollink, a {
   text-decoration: none;
   font-weight: 700;
-}
-
-.schoollink {
   color: goldenrod;
 }
 
@@ -158,28 +190,13 @@ footer .copy {
   font-size: 14px;
 }
 
-footer .modified {
-  font-size: 12px;
-}
-
 @media only screen and (min-width: 750px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-left: 40px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-top: -10px;
-    margin-bottom: -10px;
+  #form {
+    box-shadow: 0 4px 10px black;
   }
 
-  .navbar li:first-child {
-    display: none;
-  }
-
-  .navbar li {
-    display: block;
-    flex: 1 1 100%;
+  .summary {
+    box-shadow: 5px 10px 15px black;
   }
 }
 

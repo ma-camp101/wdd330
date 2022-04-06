@@ -1,1 +1,0 @@
-{"mappings":"AAAA,QAAQ,CAAC,aAAa,CAAC,OAAO,CAAC,CAAC,WAAW,GAAG,IAAI,IAAI,EAAE,CAAC,WAAW,EAAE,CAAC","sources":["js/dates.js"],"sourcesContent":["document.querySelector(\"#year\").textContent = new Date().getFullYear();\r\n\r\n"],"names":[],"version":3,"file":"attribution.a3aa0f2d.js.map","sourceRoot":"/__parcel_source_root/"}

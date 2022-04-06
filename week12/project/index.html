@@ -11,24 +11,16 @@
     </head>
     <body>
         <header>
-            <picture class="banner">
-                <img src="images/renee-fisher-ltkf2tdx9ui-unsplash-logo.jpg" alt="white spraypaint stencil of fat man running, transition arrow, then fit man running on green wall">
-            </picture>
+            <a href="index.html" class="banner"><img src="images/renee-fisher-ltkf2tdx9ui-unsplash-logo.jpg" alt="white spraypaint stencil of fat man running, transition arrow, then fit man running on green wall"></a> 
             <h1>Fitness Journal</h1>
         </header>
-            <nav>
-            <ul class="navbar"> 
-                <li><a class="listItem" onclick="switchMenu()" href="#">&#9776;</a></li>
-                <li><a class="listItem active" href="index.html">Home</a></li>
-                <li><a class="listItem" href="goals.html">Goals</a></li>
-                <li><a class="listItem" href="meals.html">Meal Planner</a></li>
-                <li><a class="listItem" href="support.html">Support</a></li>
-            </ul>
-            <div class="searchSite"></div>
-        </nav>
         <main>
             <section class="startPointImages"></section>
             <section class="motivation"></section>
+            <form id="form">
+                <input type="text" id="input" class="input" placeholder="Enter your goals here" autocomplete="off"/>
+                <ul class="todos" id="todos"></ul>
+            </form>    
             <section class="weather">
                 <div class="summary">
                     <h2>Weather Summary</h2>
@@ -65,11 +57,12 @@
             <p class="copy">&copy; <span id="year"></span> | Mike Camp | Pennsylvania | <a class="schoollink" href="https://www.byui.edu/online">BYUI Online Learning</a></p><br>
             <p>Weather information provided by <a class="attribution" href="https://openweathermap.org/">OpenWeather</a></p>
         </footer>
-        <script src="js/dates.js"></script> 
-        <script src="js/main.js"></script>
-        <script src="js/navigation.js"></script>
+        <script src="js/dates.js"></script>
         <script src="js/weatherforecast.js"></script>
         <script src="js/windchill.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/ls.js"></script>
+        <script src="js/utilities.js"></script>
         <script src="js/attributes.js"></script>
     </body>
 </html>
