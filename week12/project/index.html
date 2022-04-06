@@ -16,14 +16,15 @@
         </header>
         <main>
             <section class="startPointImages">
+                <h2>Start Point Images</h2>
                 <div class="container">
                     <input type="file" id="image_input" accept="image/png, image/jpg"><br>
                    <div id="display_image"><img src="images/rsz_mike1.jpg" alt="Mike Camp front view"></div>
                    <div id="display_image2"><img src="images/rsz_mike2.jpg" alt="Mike Camp side view"></div>
                  </div>
             </section>
-            <section class="motivation">
-                <img src="images/anastase-maragos-fp7cfyppukm-unsplash.jpg" class="motivate" alt="man lifting bumbells">
+            <section id="motivate1" class="motivation">
+                <img src="images/anastase-maragos-fp7cfyppukm-unsplash.jpg" class="motivate" alt="man lifting dumbells">
             </section>
             <section class="weather">
                 <div class="summary">
@@ -54,17 +55,44 @@
                     </ul>
                 </div>
             </section>
+            <section class="menu">
+                <h2>Daily Menu Planner</h2>
+                <div class="breakfast">
+                    <h3>Breakfast</h3>
+                    <form class="meal">
+                        <input type="text" class="input" placeholder="Enter your breakfast items here" autocomplete="off"/>
+                        <ul class="todos" id="todos"></ul>
+                    </form>
+                </div>
+                <div class="lunch">
+                    <h3>Lunch</h3>
+                    <form class="meal">
+                        <input type="text" class="input" placeholder="Enter your lunch items here" autocomplete="off"/>
+                        <ul class="todos" id="todos"></ul>
+                    </form>
+                </div>
+                <div class="dinner">
+                    <h3>Dinner</h3>
+                    <form class="meal">
+                        <input type="text" class="input" placeholder="Enter your dinner items here" autocomplete="off"/>
+                        <ul class="todos" id="todos"></ul>
+                    </form>
+                </div>
+            </section>
+            <section id="motivate2" class="motivation">
+                <img src="images/kelly-sikkema-izoaojvwham-unsplash.jpg" class="motivate" alt="exersize equipment stretch puller and dumbells">
+            </section>
             <form id="form">
+                <h2>Goals</h2>
                 <input type="text" id="input" class="input" placeholder="Enter your goals here" autocomplete="off"/>
                 <ul class="todos" id="todos"></ul>
             </form>    
-
-            <article class="currentEvents"></article>
-            <section class="motivation">
+            <section id="motivate3" class="motivation">
                 <img src="images/fitsum-admasu-ogv9xil7dky-unsplash.jpg" class="motivate" alt="three women jogging">
             </section>
-            <section class="schedule"></section>
-            <div class="attribute"></div>
+            <div class="attribute">
+                <h2>Attribution</h2>
+            </div>
         </main>
         <footer>
             <p class="copy">&copy; <span id="year"></span> | Mike Camp | Pennsylvania | <a class="schoollink" href="https://www.byui.edu/online">BYUI Online Learning</a></p><br>
@@ -75,7 +103,6 @@
         <script src="js/windchill.js"></script>
         <script src="js/todo.js"></script>
         <script src="js/ls.js"></script>
-        <script src="js/utilities.js"></script>
         <script src="js/attributes.js"></script>
     </body>
 </html>

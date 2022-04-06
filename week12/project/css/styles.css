@@ -26,9 +26,12 @@ header {
   border-radius: 3px;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: "Dancing Script", "Rouge Script", fantasy;
   font-weight: 700;
+}
+
+h1 {
   text-align: center;
   position: relative;
   margin-top: -70px;
@@ -42,6 +45,10 @@ main {
   flex-direction: column;
   margin: 0 5px;
   justify-content: center;
+}
+
+.startPointImages h2 {
+  text-align: center;
 }
 
 .container {
@@ -87,7 +94,7 @@ main {
 }
 
 .motivate {
-  margin-left: 5px;
+  margin: 5px;
 }
 
 .weather {
@@ -167,6 +174,28 @@ main {
   margin-left: 10px;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border-radius: 3px;
+  margin: 10px 5px;
+}
+
+.meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 398px;
+  min-height: 100px;
+  border: solid thin #1d4861;
+  border-radius: 3px;
+  margin: 5px;
+}
+
 #form {
   display: flex;
   flex-direction: column;
@@ -174,7 +203,7 @@ main {
   max-width: 100%;
   width: 398px;
   min-height: 200px;
-  margin: 10px 5px;
+  margin: 5px;
   border: solid thin #1d4861;
   border-radius: 3px;
 }
@@ -223,6 +252,8 @@ input::placeholder {
 
 .thanks {
   list-style-type: none;
+  margin-left: 5px;
+  padding: 5px;
 }
 
 .attribute {
@@ -233,6 +264,10 @@ input::placeholder {
   border: solid thin #1d4861;
   border-radius: 3px;
   margin: 10px 5px;
+}
+
+.attribute h2 {
+  text-align: center;
 }
 
 footer {
@@ -255,12 +290,105 @@ footer .copy {
 }
 
 @media only screen and (min-width: 750px) {
-  #form {
-    box-shadow: 0 4px 10px black;
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .startPointImages {
+    grid-column: 1;
+  }
+
+  #motivate1 {
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
   }
 
   .weather {
+    grid-column: 1;
+    grid-row: 2;
     box-shadow: 5px 10px 15px black;
+  }
+
+  .menu {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #motivate2 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  #form {
+    grid-column: 1;
+    grid-row: 3;
+    box-shadow: 0 4px 10px black;
+  }
+
+  #motivate3 {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .attribute {
+    grid-column: 2;
+    grid-row: 4;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main {
+    margin: 10px;
+  }
+
+  .startPointImages {
+    grid-column: 1;
+    margin-left: 60px;
+  }
+
+  #motivate1 {
+    display: none;
+  }
+
+  .weather {
+    grid-column: 2;
+    grid-row: 1;
+    box-shadow: 5px 10px 15px black;
+    margin-left: 20px;
+  }
+
+  .menu {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 60px;
+  }
+
+  #motivate2 {
+    display: none;
+  }
+
+  #form {
+    grid-column: 2;
+    grid-row: 2;
+    box-shadow: 0 4px 10px black;
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+
+  #motivate3 {
+    grid-column: 2;
+    grid-row: 3;
+    margin-right: 50px;
+  }
+
+  .attribute {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 60px;
   }
 }
 
