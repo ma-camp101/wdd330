@@ -15,12 +15,16 @@
             <h1>Fitness Journal</h1>
         </header>
         <main>
-            <section class="startPointImages"></section>
-            <section class="motivation"></section>
-            <form id="form">
-                <input type="text" id="input" class="input" placeholder="Enter your goals here" autocomplete="off"/>
-                <ul class="todos" id="todos"></ul>
-            </form>    
+            <section class="startPointImages">
+                <div class="container">
+                    <input type="file" id="image_input" accept="image/png, image/jpg"><br>
+                   <div id="display_image"><img src="images/rsz_mike1.jpg" alt="Mike Camp front view"></div>
+                   <div id="display_image2"><img src="images/rsz_mike2.jpg" alt="Mike Camp side view"></div>
+                 </div>
+            </section>
+            <section class="motivation">
+                <img src="images/anastase-maragos-fp7cfyppukm-unsplash.jpg" class="motivate" alt="man lifting bumbells">
+            </section>
             <section class="weather">
                 <div class="summary">
                     <h2>Weather Summary</h2>
@@ -41,6 +45,8 @@
                         <li><span id="humidity"></span></li>
                         <li><span id="wind"></span></li>
                     </ul>
+                </div>
+                <div class="forecast">
                     <ul class="forecast">
                         <li class="days"><span id="dayofweek1"></span>&nbsp;<img src="" alt="" id="icon1">&nbsp;<span id="forecast1"></span></li>
                         <li class="days"><span id="dayofweek2"></span>&nbsp;<img src="" alt="" id="icon2">&nbsp;<span id="forecast2"></span></li>
@@ -48,15 +54,22 @@
                     </ul>
                 </div>
             </section>
+            <form id="form">
+                <input type="text" id="input" class="input" placeholder="Enter your goals here" autocomplete="off"/>
+                <ul class="todos" id="todos"></ul>
+            </form>    
+
             <article class="currentEvents"></article>
-            <picture class="hypeUpImage"></picture>
+            <section class="motivation">
+                <img src="images/fitsum-admasu-ogv9xil7dky-unsplash.jpg" class="motivate" alt="three women jogging">
+            </section>
             <section class="schedule"></section>
             <div class="attribute"></div>
         </main>
         <footer>
             <p class="copy">&copy; <span id="year"></span> | Mike Camp | Pennsylvania | <a class="schoollink" href="https://www.byui.edu/online">BYUI Online Learning</a></p><br>
-            <p>Weather information provided by <a class="attribution" href="https://openweathermap.org/">OpenWeather</a></p>
         </footer>
+        <script src="js/loadImage.js"></script>
         <script src="js/dates.js"></script>
         <script src="js/weatherforecast.js"></script>
         <script src="js/windchill.js"></script>

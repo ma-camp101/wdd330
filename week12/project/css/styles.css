@@ -40,22 +40,81 @@ main {
   min-height: 300px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 5px;
   justify-content: center;
 }
 
-.summary {
+.container {
+  width: 398px;
+  height: 300px;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 5px;
+  border: solid thin #1d4861;
+  border-radius: 3px;
+}
+
+#image_input {
+  padding: 10px;
+  margin-bottom: 5px;
+  grid-column: 1/span 2;
+}
+
+#display_image {
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 2;
+  opacity: 80%;
+  margin-left: 40px;
+}
+
+#display_image2 {
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 80%;
+}
+
+.motivate {
+  margin-left: 5px;
+}
+
+.weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   width: 400px;
   position: relative;
   background-color: #1d4861;
   opacity: 90%;
   color: aliceblue;
-  border: solid thin #1d4861;
   border-radius: 5px;
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.summary {
+  grid-column: 1/span 2;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 10px;
+  width: 400px;
+  position: relative;
+  opacity: 90%;
+  color: aliceblue;
+  margin-top: 10px;
+  margin-left: -25px;
 }
 
 .summary h2 {
@@ -63,6 +122,7 @@ main {
   grid-row: 1;
   justify-self: center;
   margin-bottom: 0;
+  margin-left: 25px;
 }
 
 #currenticon {
@@ -71,6 +131,7 @@ main {
   grid-row: 2;
   justify-self: center;
   margin-top: -20px;
+  margin-left: 25px;
 }
 
 .title {
@@ -97,6 +158,7 @@ main {
 .forecast {
   display: flex;
   flex-direction: row;
+  margin-left: 10px;
 }
 
 .days {
@@ -110,10 +172,10 @@ main {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
-  width: 400px;
+  width: 398px;
   min-height: 200px;
-  margin: 10px;
-  border: solid thick #1d4861;
+  margin: 10px 5px;
+  border: solid thin #1d4861;
   border-radius: 3px;
 }
 
@@ -159,16 +221,18 @@ input::placeholder {
   text-decoration: line-through;
 }
 
-.hide {
-  display: none;
+.thanks {
+  list-style-type: none;
 }
 
-.remove {
-  float: right;
-}
-
-.count {
-  font-weight: 700;
+.attribute {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 398px;
+  border: solid thin #1d4861;
+  border-radius: 3px;
+  margin: 10px 5px;
 }
 
 footer {
@@ -195,7 +259,7 @@ footer .copy {
     box-shadow: 0 4px 10px black;
   }
 
-  .summary {
+  .weather {
     box-shadow: 5px 10px 15px black;
   }
 }

@@ -7,14 +7,11 @@ fetch(thanks)
   let items = jsonObject['attributes'];
   items.forEach((attribute) => {
 
-    let attributes = document.createElement('ol');
+    let attributes = document.createElement('ul');
+    attributes.classList.add("thanks");
     let label = document.createElement('li');
     
-    label.innerHTML = `${attribute.person} <a href="${attribute.url}">Renee Fisher<a/> ${attribute.site} <a href="${attribute.url2}">unsplash.com<a/>`
-
-    // anchor.setAttribute('href', `${attribute.url}`);
-    // anchor.innerHTML =  `${attribute.label}`;
-    // label.appendChild(anchor);
+    label.innerHTML = `${attribute.by} <a href="${attribute.url}">${attribute.person}<a/> ${attribute.found} <a href="${attribute.url2}">${attribute.site}<a/>`
     attributes.appendChild(label);
           
     document.querySelector('div.attribute').appendChild(attributes);
