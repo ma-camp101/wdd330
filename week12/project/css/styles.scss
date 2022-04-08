@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Rouge+Script&display=swap');
+
 $color-1: aliceblue;
 $color-2: black;
 $color-3: maroon;
 $color-4: #1d4861;
 $color-5: goldenrod;
+
 $font-1: "Roboto", "Open Sans", sans-serif;
 $font-2: "Dancing Script", "Rouge Script", fantasy;
+
 body {
     background-color: $color-1;
     font-family: $font-1;
@@ -60,44 +63,27 @@ main {
 
 .container{
     width: 398px;
-    height: 300px;
+    height: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap:10px;
     margin: 5px;
-    border: solid thin $color-4;
     border-radius: 3px;
  }
-
- #image_input {
-     padding: 10px;
-     margin-bottom: 5px;
-     grid-column: 1 /span 2;
- }
  
- #display_image {
+ #display_image, #display_image2 {
     width: 150px;
     height: 200px;
-    border: 1px solid $color-2;
     background-position: center;
     background-size: cover;
     grid-column: 1;
-    grid-row: 2;
-    opacity: 80%;
-    margin-left: 40px;
  }
 
  #display_image2 {
-    width: 150px;
-    height: 200px;
-    border: 1px solid $color-2;
-    background-position: center;
-    background-size: cover;
     grid-column: 2;
-    grid-row: 2;
-    opacity: 80%;
+    margin-left: 40px;
  }
 
  .motivate {
@@ -105,69 +91,62 @@ main {
     
  }
 
-.weather {
+ .weather, .summary {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     width: 400px;
     position: relative;
-    background-color: $color-4;
     opacity: 90%;
     color: $color-1;
-    border-radius: 5px;
     margin-top: 10px;
+ }
+
+.weather {
+    grid-template-columns: 1fr 1fr;    
+    background-color: $color-4;
+    border-radius: 5px;
     margin-left: 5px;
 }
 
 .summary {
     grid-column: 1 /span 2;
-    display: grid;
     grid-template-columns: 60% 40%;
-    grid-gap: 10px;
-    width: 400px;
-    position: relative;
-    opacity: 90%;
-    color: $color-1;
-    margin-top: 10px;
     margin-left: -25px;
 }
 
-.summary h2 {
-    grid-column: 1/span 2;
-    grid-row: 1;
+.summary h2, #currenticon {
+    grid-column: 1 /span 2;
     justify-self: center;
-    margin-bottom: 0;
     margin-left: 25px;
+}
+
+.summary h2 {
+    grid-row: 1;
+    margin-bottom: 0;
 }
 
 #currenticon {
     width: 80px;
-    grid-column: 1/span 2;
     grid-row: 2;
-    justify-self: center;
     margin-top: -20px;
-    margin-left: 25px;
+}
+
+.title, .temperature {
+    grid-row: 3;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding-left: 0;
+    margin-top: -20px;
 }
 
 .title {
     grid-column: 1;
-    grid-row: 3;
     text-align: right;
-    list-style-type: none;
-    font-weight: 600;
-    font-size: 1.25rem;
-    padding-left: 0;
-    margin-top: -20px;
 }
 
 .temperature {
     grid-column: 2;
-    grid-row: 3;
-    list-style-type: none;
-    font-weight: 600;
-    padding-left: 0;
-    font-size: 1.25rem;
-    margin-top: -20px;
 }
 
 .forecast {
@@ -182,41 +161,39 @@ main {
     margin-left: 10px;
 }
 
-.menu {
+.menu, #meal,#form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
     border-radius: 3px;
+}
+
+.menu {
+    width: 400px;
     margin: 10px 5px;
 }
 
-.meal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#meal, #form {
     width: 398px;
-    min-height: 100px;
     border: solid thin $color-4;
-    border-radius: 3px;
     margin: 5px;
+}
+
+#tasty {
+   margin-top: -200px;
+}
+
+#meal {
+    min-height:300px;
 }
 
 #form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 100%;
-    width: 398px;
     min-height: 200px;
-    margin: 5px;
-    border: solid thin $color-4;
-    border-radius: 3px;
 }
 
-.todo {
+.goal {
     width: 360px;
     max-width: 98%;
     margin: 20px auto;
@@ -236,26 +213,42 @@ input::placeholder {
     color: #c5c5c5;
 }
 
-.todos {
+.goals, .meals {
     background-color: $color-1;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
-.todos li {
+.goals li, .meals li {
     border: 1px solid #e5e5e5;
     cursor: pointer;
     padding: 1rem 2rem;
 }
 
-.todos li span {
+.goals li span, .meals li span {
     padding: 0 10px;
 }
 
-.todos li.completed {
+.goals li.completed {
     color: #b6b6b6;
     text-decoration: line-through;
+}
+
+.hide {
+    display: none;
+}
+
+.remove {
+    float: right;
+}
+
+.count {
+    font-weight: 700;
+}
+
+.taskTracker {
+  margin-top: 300px;
 }
 
 .thanks {
@@ -308,6 +301,10 @@ footer .copy {
         grid-column: 1;
     }
 
+    .startPointImages h2 {
+        margin-left: -100px;
+    }
+
     #motivate1 {
         grid-column: 2;
         justify-self: center;
@@ -346,6 +343,7 @@ footer .copy {
     .attribute {
         grid-column: 2;
         grid-row: 4;
+        box-shadow: 2px 3px 10px 3px $color-4;
     }
 }
 
@@ -375,6 +373,7 @@ footer .copy {
         grid-column: 1;
         grid-row: 2;
         margin-left: 60px;
+        margin-top: -200px;
     }
 
     #motivate2 {
@@ -392,13 +391,20 @@ footer .copy {
     #motivate3 {
        grid-column: 2;
        grid-row: 3;
-       margin-right: 50px;
+       margin-right: 75px;
     }
 
     .attribute {
         grid-column: 1;
         grid-row: 3;
         margin-left: 60px;
+        margin-top: -160px;
     }
 
+}
+
+@media only screen and (min-width: 1200px) {
+    #motivate3 {
+        margin-right: 160px;
+    }
 }

@@ -42,11 +42,12 @@ fetch(forecastURL)
         let thedate = new Date(forecast.dt_txt);
         const imagesrc2 = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
         const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-        document.querySelector(`#dayofweek${day}`).innerHTML = weekdays[thedate.getDay()];
-        document.querySelector(`#icon${day}`).setAttribute('src', `${imagesrc2}`);
-        document.querySelector(`#icon${day}`).setAttribute('alt', `${forecast.weather[0].description}`);
-        document.querySelector(`#forecast${day}`).innerHTML = `${forecast.main.temp.toFixed(1)}&#176;F`;
-        day++;
+        if(day <= 3) {
+          document.querySelector(`#dayofweek${day}`).innerHTML = weekdays[thedate.getDay()];
+          document.querySelector(`#icon${day}`).setAttribute('src', `${imagesrc2}`);
+          document.querySelector(`#icon${day}`).setAttribute('alt', `${forecast.weather[0].description}`);
+          document.querySelector(`#forecast${day}`).innerHTML = `${forecast.main.temp.toFixed(1)}&#176;F`;
+          day++;
+        }
     })
   }); 
