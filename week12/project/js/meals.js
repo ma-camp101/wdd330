@@ -10,10 +10,11 @@ if (meals) {
     });
 }
 
-meal.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    addmeal();
+meal.addEventListener("keypress", (e) => {
+    if (e.key === 'Enter'){
+        e.preventDefault();
+        addmeal();
+    }
 });
 
 function addmeal(meal) {
@@ -34,7 +35,7 @@ function addmeal(meal) {
         remove.innerHTML = '❌';
         mealEl.appendChild(remove);
 
-        remove.addEventListener('dblclick', (e) => {
+        remove.addEventListener('click', (e) => {
             e.preventDefault();
             mealEl.remove();
             updateMealsLS();

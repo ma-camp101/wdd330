@@ -10,11 +10,12 @@ if (goals) {
     });
 }
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+form.addEventListener("keypress", (e) => {
+    if (e.key === 'Enter'){
+        e.preventDefault();
 
-    addgoal();
-    countActive();
+        addgoal()
+    }
 });
 
 function addgoal(goal) {
@@ -46,7 +47,6 @@ function addgoal(goal) {
             goalEl.classList.toggle("completed");
 
             updateLS();
-            countActive();
         });
 
         remove.addEventListener("click", (e) => {
@@ -55,7 +55,6 @@ function addgoal(goal) {
             goalEl.remove();
 
             updateLS();
-            countActive();
         });
 
         goalsUL.appendChild(goalEl);

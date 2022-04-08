@@ -2,7 +2,7 @@ function updateLS() {
     const goalsEl = document.getElementsByClassName("goalId");        
     const goals = [];
     const temp = [];
-    for (i = goalsEl.length - 1; i >= 0; i--){
+    for (i = 0; i <goalsEl.length; i++){
         temp.push (goalsEl[i]);
     }
     

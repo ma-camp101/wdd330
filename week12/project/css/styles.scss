@@ -161,43 +161,20 @@ main {
     margin-left: 10px;
 }
 
-.menu, #meal,#form {
+#meal, #form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     border-radius: 3px;
-}
-
-.menu {
-    width: 400px;
-    margin: 10px 5px;
-}
-
-#meal, #form {
     width: 398px;
     border: solid thin $color-4;
-    margin: 5px;
-}
-
-#tasty {
-   margin-top: -200px;
-}
-
-#meal {
-    min-height:300px;
-}
-
-#form {
+    margin: 10px 5px;
     max-width: 100%;
     min-height: 200px;
 }
 
-.goal {
-    width: 360px;
-    max-width: 98%;
-    margin: 20px auto;
-    min-height: 200vh;
+#form h2, #form p, #meal h2 {
+    text-align: center;
 }
 
 .input {
@@ -213,7 +190,7 @@ input::placeholder {
     color: #c5c5c5;
 }
 
-.goals, .meals {
+.goals {
     background-color: $color-1;
     padding: 0;
     margin: 0;
@@ -235,20 +212,8 @@ input::placeholder {
     text-decoration: line-through;
 }
 
-.hide {
-    display: none;
-}
-
 .remove {
     float: right;
-}
-
-.count {
-    font-weight: 700;
-}
-
-.taskTracker {
-  margin-top: 300px;
 }
 
 .thanks {
@@ -317,9 +282,12 @@ footer .copy {
         box-shadow: 5px 10px 15px $color-2;
     }
 
-    .menu {
+    #meal {
         grid-column: 2;
         grid-row: 2;
+        box-shadow: 0 4px 10px $color-2;
+        align-self: flex-start;
+        margin-top: -100px;
     }
 
     #motivate2 {
@@ -344,6 +312,7 @@ footer .copy {
         grid-column: 2;
         grid-row: 4;
         box-shadow: 2px 3px 10px 3px $color-4;
+        margin-top: -100px;
     }
 }
 
@@ -365,15 +334,13 @@ footer .copy {
     .weather {
         grid-column: 2;
         grid-row: 1;
-        box-shadow: 5px 10px 15px $color-2;
         margin-left: 20px;
     }
 
-    .menu {
+    #meal {
         grid-column: 1;
         grid-row: 2;
         margin-left: 60px;
-        margin-top: -200px;
     }
 
     #motivate2 {
@@ -398,12 +365,12 @@ footer .copy {
         grid-column: 1;
         grid-row: 3;
         margin-left: 60px;
-        margin-top: -160px;
     }
 
 }
 
 @media only screen and (min-width: 1200px) {
+
     #motivate3 {
         margin-right: 160px;
     }

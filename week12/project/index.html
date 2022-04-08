@@ -53,34 +53,22 @@
                         <li class="days"><span id="dayofweek3"></span>&nbsp;<img src="" alt="" id="icon3">&nbsp;<span id="forecast3"></span></li>
                     </ul>
                 </div>
-            </section>
-            <section class="menu">
+            </section>                
+            <form id="meal">
                 <h2>Daily Menu Planner</h2>
-                <p>Double Click ❌ to remove</p>
-                    <form id="meal">
-                        <input type="text" class="input" id="tasty" placeholder="Enter your breakfast items here" autocomplete="off"/>
-                        <ul class="meals" id="meals"></ul>
-                    </form>
-            </section>
+                <input type="text" class="input" id="tasty" placeholder="Enter your meal choices here" autocomplete="off"/>
+                <ul class="goals" id="meals"></ul>
+            </form>
             <section id="motivate2" class="motivation">
                 <img src="images/kelly-sikkema-izoaojvwham-unsplash.jpg" class="motivate" alt="exersize equipment stretch puller and dumbells">
             </section>
             <form id="form">
                 <h2>Goals</h2>
-
                 <p class="legend">
                     ✔️ Goal Done &nbsp; ❌ Delete Goal
                 </p>
                 <input type="text" id="input" class="input" placeholder="Enter your goals here" autocomplete="off"/>
                 <ul class="goals" id="goals"></ul>
-                <div class="taskTracker">
-                    <p>
-                        <span class="count"></span> tasks left  &nbsp;
-                        <button class="all">All</button>  
-                        <button class="active">Active</button>  
-                        <button class="completed">Completed</button>
-                    </p>
-                </div>
             </form>        
             <section id="motivate3" class="motivation">
                 <img src="images/fitsum-admasu-ogv9xil7dky-unsplash.jpg" class="motivate" alt="three women jogging">
@@ -99,7 +87,6 @@
         <script src="js/windchill.js"></script>
         <script src="js/goals.js"></script>
         <script src="js/meals.js"></script>
-        <script src="js/utilities.js"></script>
         <script src="js/attributes.js"></script>
     </body>
 </html>

@@ -2,7 +2,7 @@ function updateMealsLS() {
     const mealsEl = document.getElementsByClassName("mealId");        
     const meals = [];
     const temp = [];
-    for (i = mealsEl.length - 1; i >= 0; i--){
+    for (i = 0; i < mealsEl.length; i++){
         temp.push (mealsEl[i]);
     }
     
